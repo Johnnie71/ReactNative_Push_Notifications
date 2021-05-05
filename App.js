@@ -7,7 +7,9 @@ import * as Permissions from 'expo-permissions';
 export default function App() {
   useEffect(() => {
     Permissions.getAsync(Permissions.NOTIFICATIONS).then(status => {
-      
+      if (status !== 'granted') {
+
+      }
     });
   }, []);
 
