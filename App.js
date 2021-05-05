@@ -3,6 +3,10 @@ import React from 'react';
 import { StyleSheet, Button, View } from 'react-native';
 
 export default function App() {
+  const triggerNotificationHandler = () => {
+
+  };
+
   return (
     <View style={styles.container}>
       <Button title="Trigger Notification" />
