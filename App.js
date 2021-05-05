@@ -5,7 +5,7 @@ import { StyleSheet, Button, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Button />
+      <Button title="Trigger Notification" />
       <StatusBar style="auto" />
     </View>
   );
