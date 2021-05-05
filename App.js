@@ -8,7 +8,7 @@ export default function App() {
   useEffect(() => {
     Permissions.getAsync(Permissions.NOTIFICATIONS).then(status => {
       if (status !== 'granted') {
-
+          Permissions.askAsync()
       }
     });
   }, []);
