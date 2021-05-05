@@ -10,8 +10,8 @@ export default function App() {
       if (statusObj.status !== 'granted') {
         return Permissions.askAsync(Permissions.NOTIFICATIONS);
       }
-    }).then(status => {
-      if (status !== 'granted') {
+    }).then(statusObj => {
+      if (statusObj.status !== 'granted') {
         return;
       }
     });
