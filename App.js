@@ -10,6 +10,8 @@ export default function App() {
       if (status !== 'granted') {
         return Permissions.askAsync(Permissions.NOTIFICATIONS);
       }
+    }).then(status => {
+      
     });
   }, []);
 
