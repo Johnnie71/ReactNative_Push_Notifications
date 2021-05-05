@@ -11,7 +11,9 @@ export default function App() {
         return Permissions.askAsync(Permissions.NOTIFICATIONS);
       }
     }).then(status => {
-      
+      if (status !== 'granted') {
+
+      }
     });
   }, []);
 
