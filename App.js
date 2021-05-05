@@ -12,7 +12,7 @@ export default function App() {
       }
     }).then(status => {
       if (status !== 'granted') {
-
+        return;
       }
     });
   }, []);
