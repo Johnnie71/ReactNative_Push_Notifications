@@ -5,7 +5,7 @@ import * as Notifications from 'expo-notifications';
 
 export default function App() {
   const triggerNotificationHandler = () => {
-
+    Notifications.scheduleNotificationAsync()
   };
 
   return (
