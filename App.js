@@ -5,7 +5,12 @@ import * as Notifications from 'expo-notifications';
 
 export default function App() {
   const triggerNotificationHandler = () => {
-    Notifications.scheduleNotificationAsync()
+    Notifications.scheduleNotificationAsync({
+      content: {
+        title: "My first local notification",
+        body: "This is the first local notification we are sending!"
+      }
+    })
   };
 
   return (
