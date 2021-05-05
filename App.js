@@ -5,6 +5,10 @@ import * as Notifications from 'expo-notifications';
 import * as Permissions from 'expo-permissions';
 
 export default function App() {
+  useEffect(() => {
+
+  }, []);
+
   const triggerNotificationHandler = () => {
     Notifications.scheduleNotificationAsync({
       content: {
