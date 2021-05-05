@@ -9,7 +9,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Button title="Trigger Notification" />
+      <Button title="Trigger Notification" onPress={triggerNotificationHandler} />
       <StatusBar style="auto" />
     </View>
   );
