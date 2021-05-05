@@ -11,7 +11,7 @@ export default function App() {
         body: "This is the first local notification we are sending!"
       },
       trigger: {
-        
+        seconds: 10
       }
     });
   };
