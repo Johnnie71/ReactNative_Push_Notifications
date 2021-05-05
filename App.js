@@ -9,8 +9,11 @@ export default function App() {
       content: {
         title: "My first local notification",
         body: "This is the first local notification we are sending!"
+      },
+      trigger: {
+        
       }
-    })
+    });
   };
 
   return (
