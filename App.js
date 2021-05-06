@@ -39,7 +39,9 @@ export default function App() {
   };
 
   useEffect(() => {
-    Notifications.addNotificationReceivedListener();
+    Notifications.addNotificationReceivedListener(notification => {
+      console.log(notification);
+    });
   },[]);
 
   return (
