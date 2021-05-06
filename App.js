@@ -43,7 +43,9 @@ export default function App() {
       console.log(notification); 
     });
 
-    return () => {};
+    return () => {
+      subscription.remove();
+    };
 
   },[]);
 
