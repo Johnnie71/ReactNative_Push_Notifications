@@ -42,6 +42,9 @@ export default function App() {
     const subscription = Notifications.addNotificationReceivedListener(notification => {
       console.log(notification); 
     });
+
+    return () => {};
+
   },[]);
 
   return (
