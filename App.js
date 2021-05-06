@@ -49,6 +49,7 @@ export default function App() {
 
     return () => {
       backgroundSubscription.remove();
+      foregroundSubscription.remove();
     };
   },[]);
 
