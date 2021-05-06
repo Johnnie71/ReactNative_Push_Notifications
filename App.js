@@ -38,6 +38,10 @@ export default function App() {
     });
   };
 
+  useEffect(() => {
+    Notifications.addNotificationReceivedListener();
+  },[]);
+
   return (
     <View style={styles.container}>
       <Button 
