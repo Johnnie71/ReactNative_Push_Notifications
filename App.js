@@ -39,8 +39,8 @@ export default function App() {
   };
 
   useEffect(() => {
-    Notifications.addNotificationReceivedListener(notification => {
-      console.log(notification);
+    const subscription = Notifications.addNotificationReceivedListener(notification => {
+      console.log(notification); 
     });
   },[]);
 
