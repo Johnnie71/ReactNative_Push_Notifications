@@ -7,7 +7,7 @@ import * as Permissions from 'expo-permissions';
 Notifications.setNotificationHandler({
   handleNotification: async () => {
     return {
-
+      shouldShowAlert: true
     };
   }
 });
