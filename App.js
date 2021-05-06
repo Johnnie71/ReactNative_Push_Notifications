@@ -5,8 +5,10 @@ import * as Notifications from 'expo-notifications';
 import * as Permissions from 'expo-permissions';
 
 Notifications.setNotificationHandler({
-  handleNotification: () => {
-    return {};
+  handleNotification: async () => {
+    return {
+
+    };
   }
 });
 
