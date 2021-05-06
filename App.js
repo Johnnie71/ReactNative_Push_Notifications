@@ -43,7 +43,7 @@ export default function App() {
       console.log(response);
     });
 
-    const subscription = Notifications.addNotificationReceivedListener(notification => {
+    const foregroundSubscription = Notifications.addNotificationReceivedListener(notification => {
       console.log(notification); 
     });
 
