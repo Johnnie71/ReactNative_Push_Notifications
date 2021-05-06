@@ -39,7 +39,7 @@ export default function App() {
   };
 
   useEffect(() => {
-    Notifications.addNotificationResponseReceivedListener(response => {
+    const backgroundSubscription = Notifications.addNotificationResponseReceivedListener(response => {
       console.log(response);
     });
 
