@@ -22,11 +22,11 @@ export default function App() {
     Notifications.scheduleNotificationAsync({
       content: {
         title: "My first local notification",
-        body: "This is the first local notification we are sending!"
+        body: "This is the first local notification we are sending!",
       },
       trigger: {
-        seconds: 10
-      }
+        seconds: 10,
+      },
     });
   };
 
