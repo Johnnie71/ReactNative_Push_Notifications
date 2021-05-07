@@ -24,7 +24,9 @@ export default function App() {
         throw new Error('Permission not granted!');
       }
     })
-    .then(() => {})
+    .then(() => {
+      Notifications.getExpoPushTokenAsync();
+    })
     .catch((err) => {
       return null;
     });
