@@ -24,8 +24,9 @@ export default function App() {
         throw new Error('Permission not granted!');
       }
     })
-    .then(() => {
-
+    .then(() => {})
+    .catch((err) => {
+      return null;
     });
   }, []);
 
