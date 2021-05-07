@@ -33,7 +33,7 @@ export default function App() {
     })
     .then(response => {
       const token = response.data;
-      setPushToken(token)
+      setPushToken(token);
     })
     .catch((err) => {
       return null;
