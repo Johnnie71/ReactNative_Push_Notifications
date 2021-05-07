@@ -51,7 +51,10 @@ export default function App() {
         "Accept": 'application/json',
         "Accept-Encoding": 'gzip, deflate',
         "Content-Type": 'application/json'
-      }
+      },
+      body: JSON.stringify({
+        
+      })
     });
   };
 
