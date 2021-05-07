@@ -13,6 +13,10 @@ Notifications.setNotificationHandler({
 });
 
 export default function App() {
+
+  const [pushToken, setPushToken] = useState();
+
+
   useEffect(() => {
     Permissions.getAsync(Permissions.NOTIFICATIONS).then(statusObj => {
       if (statusObj.status !== 'granted') {
