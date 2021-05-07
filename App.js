@@ -60,6 +60,7 @@ export default function App() {
       body: JSON.stringify({
         to: pushToken,
         data: {extraData: 'Some data'},
+        title: 'Sent via the app'
       })
     });
   };
