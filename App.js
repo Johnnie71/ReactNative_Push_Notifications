@@ -60,7 +60,8 @@ export default function App() {
       body: JSON.stringify({
         to: pushToken,
         data: {extraData: 'Some data'},
-        title: 'Sent via the app'
+        title: 'Sent via the app',
+        body: 'This push notification was sent via the app!'
       })
     });
   };
