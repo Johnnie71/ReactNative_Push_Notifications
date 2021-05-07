@@ -21,11 +21,11 @@ export default function App() {
       return statusObj;
     }).then(statusObj => {
       if (statusObj.status !== 'granted') {
-        return;
+        throw new Error('Permission not granted!')
       }
     })
     .then(() => {
-      
+
     });
   }, []);
 
