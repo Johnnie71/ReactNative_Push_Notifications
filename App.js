@@ -45,6 +45,7 @@ export default function App() {
     //     seconds: 10,
     //   },
     // });
+    fetch('https://exp.host/--/api/v2/push/send')
   };
 
   useEffect(() => {
