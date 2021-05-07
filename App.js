@@ -23,19 +23,22 @@ export default function App() {
       if (statusObj.status !== 'granted') {
         return;
       }
+    })
+    .then(() => {
+      
     });
   }, []);
 
   const triggerNotificationHandler = () => {
-    Notifications.scheduleNotificationAsync({
-      content: {
-        title: "My first local notification",
-        body: "This is the first local notification we are sending!",
-      },
-      trigger: {
-        seconds: 10,
-      },
-    });
+    // Notifications.scheduleNotificationAsync({
+    //   content: {
+    //     title: "My first local notification",
+    //     body: "This is the first local notification we are sending!",
+    //   },
+    //   trigger: {
+    //     seconds: 10,
+    //   },
+    // });
   };
 
   useEffect(() => {
