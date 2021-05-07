@@ -25,7 +25,7 @@ export default function App() {
       }
     })
     .then(() => {
-      Notifications.getExpoPushTokenAsync();
+      return Notifications.getExpoPushTokenAsync();
     })
     .catch((err) => {
       return null;
