@@ -45,7 +45,14 @@ export default function App() {
     //     seconds: 10,
     //   },
     // });
-    fetch('https://exp.host/--/api/v2/push/send')
+    fetch('https://exp.host/--/api/v2/push/send', {
+      method: "POST",
+      headers: {
+        "Accept": 'application/json',
+        "Accept-Encoding": 'gzip, deflate',
+        "Content-Type": 'application/json'
+      }
+    });
   };
 
   useEffect(() => {
