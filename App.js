@@ -58,7 +58,8 @@ export default function App() {
         "Content-Type": 'application/json'
       },
       body: JSON.stringify({
-        to: pushToken
+        to: pushToken,
+        data: {extraData: 'Some data'},
       })
     });
   };
